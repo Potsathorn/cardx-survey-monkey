@@ -27,3 +27,30 @@ migrate_working_dir/
 **/doc/api/
 .dart_tool/
 build/
+
+# --- iOS / Xcode ---
+# CocoaPods: Do not track the 'Pods' directory as it's auto-generated
+Pods/
+# Podfile.lock: Generally recommended to commit to ensure version consistency across the team
+# Podfile.lock
+
+# Build artifacts and derived data
+build/
+*.xcworkspace/
+xcuserdata/
+*.xcuserdatad/
+
+# --- Flutter / FVM ---
+# .fvm: Avoid committing environment-specific configuration to prevent version conflicts
+.fvm/
+
+# Generated files by Flutter/Dart
+.flutter-plugins
+.flutter-plugins-dependencies
+.dart_tool/
+.packages
+
+# General IDE or OS artifacts
+.DS_Store
+.vscode/
+.idea/
