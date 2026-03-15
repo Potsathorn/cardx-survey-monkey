@@ -10,8 +10,17 @@ class MethodChannelCardxSurveyMonkey extends CardxSurveyMonkeyPlatform {
   final methodChannel = const MethodChannel('cardx_survey_monkey');
 
   @override
-  Future<String?> getPlatformVersion() async {
-    final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
-    return version;
+  Future<void> showSurvey(String collectorHash) async {
+    try {
+      await methodChannel.invokeMethod(
+        'showSurvey',
+        {
+          "collectorHash": collectorHash,
+        },
+      );
+    } on PlatformException catch (e) {
+      print("Error: ${e.code} - ${e.message}");
+      // ใส่ Logic แจ้งเตือน User ตรงนี้ เช่น "ไม่สามารถโหลดแบบสอบถามได้"
+    }
   }
 }

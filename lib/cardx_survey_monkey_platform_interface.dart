@@ -23,7 +23,7 @@ abstract class CardxSurveyMonkeyPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
-    throw UnimplementedError('platformVersion() has not been implemented.');
+  Future<void> showSurvey(String collectorHash) {
+    throw UnimplementedError('showSurvey() has not been implemented.');
   }
 }

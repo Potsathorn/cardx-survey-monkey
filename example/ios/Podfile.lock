@@ -1,0 +1,35 @@
+PODS:
+  - cardx_survey_monkey (0.0.1):
+    - Flutter
+    - surveymonkey-ios-sdk (= 2.1.4)
+  - Flutter (1.0.0)
+  - integration_test (0.0.1):
+    - Flutter
+  - surveymonkey-ios-sdk (2.1.4)
+
+DEPENDENCIES:
+  - cardx_survey_monkey (from `.symlinks/plugins/cardx_survey_monkey/ios`)
+  - Flutter (from `Flutter`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+
+SPEC REPOS:
+  trunk:
+    - surveymonkey-ios-sdk
+
+EXTERNAL SOURCES:
+  cardx_survey_monkey:
+    :path: ".symlinks/plugins/cardx_survey_monkey/ios"
+  Flutter:
+    :path: Flutter
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+
+SPEC CHECKSUMS:
+  cardx_survey_monkey: 1aed0e844fde1fb40b1d89a6b7b46a84c6505407
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  integration_test: 2d03ab552da9a1f408709a6acf3d7ca4cb3cb307
+  surveymonkey-ios-sdk: bd7d50d0320d07df2f7e7bba05b27517a36e08b2
+
+PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+
+COCOAPODS: 1.16.2
